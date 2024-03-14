@@ -1,18 +1,18 @@
 :root {
     --main-and-footer-heading-color: #2F303A;  
-    --black: #000000;
-    --white: #fff;
+    --main-heading-color: #212121;
+    --main-text-color: #fff;
     --main-background-section4: #F5F4FA;
     --main-button-color: #2196F3;
 }
 
 header nav a {
-    color: var(--black);
+    color: var(--main-heading-color);
 }
 
 main > section:first-child {
     background-color: var(--main-and-footer-heading-color);
-    color: var(--white);
+    color: var(--main-text-color);
 }
 
 main section:nth-child(4) {
@@ -21,10 +21,10 @@ main section:nth-child(4) {
 
 button[type=submit] {
     background-color: var(--main-button-color);
-    color: var(--white);
+    color: var(--main-text-color);
 }
 
 footer {
     background-color: var(--main-and-footer-heading-color);
-    color: var(--white);
+    color: var(--main-text-color);
 }
