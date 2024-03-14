@@ -1,0 +1,13 @@
+header nav a {
+    color: black;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
