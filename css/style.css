@@ -4,19 +4,35 @@
     --main-text-color: #fff;
     --main-background-section4: #F5F4FA;
     --main-button-color: #2196F3;
+    --font-family: 'roboto', sans-serif;
+    --second-family: 'raleway', sans-serif;
+}
+
+header nav a[href="./index.html"] {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
 
 header nav a {
     color: var(--main-heading-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
 }
 
 main > section:first-child {
     background-color: var(--main-and-footer-heading-color);
     color: var(--main-text-color);
-}
-
-main section:nth-child(4) {
-    background-color: var(--main-background-section4);
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 button[type=submit] {
@@ -24,7 +40,89 @@ button[type=submit] {
     color: var(--main-text-color);
 }
 
+button[type=submit] {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+main > section:nth-child(2) > h2 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main > section:nth-child(2) h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+main > section:nth-child(2) p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+main > section:nth-child(3) > h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+
+main > section:nth-child(4) {
+    background-color: var(--main-background-section4);
+}
+
+main > section:nth-child(4) > h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+main > section:nth-child(4) ul li h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+main > section:nth-child(4) ul li p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
 footer {
     background-color: var(--main-and-footer-heading-color);
     color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+}
+
+footer a[href='./index.html']{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
