@@ -4,11 +4,71 @@
     --main-text-color: #fff;
     --main-background-section4: #F5F4FA;
     --main-button-color: #2196F3;
+    --accent-color: #03A9F4;
+    --header-link-color: #7D7D7D;
     --font-family: 'roboto', sans-serif;
     --second-family: 'raleway', sans-serif;
 }
 
-header nav a[href="./index.html"] {
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-link:hover, 
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-link {
+    color: var(--header-link-color);
+}
+
+.header-link-carrent {
+    color: var(--accent-color);
+}
+
+.portfolio-button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-heading-color);
+}
+
+.portfolio-categories {
+    color: var(--main-heading-color);
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.portfolio-all-list-item > h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-heading-color)
+}
+
+.portfolio-all-list-item > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+.header-link-logo {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
@@ -23,13 +83,13 @@ header nav a {
     letter-spacing: 0.02em;
 }
 
-main > section:first-child {
+.info-regestration {
     background-color: var(--main-and-footer-heading-color);
     color: var(--main-text-color);
     font-family: var(--font-family);
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -44,7 +104,7 @@ button[type=submit] {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 16px;
-    line-height: 187%;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
 }
@@ -53,6 +113,7 @@ main > section:nth-child(2) > h2 {
     font-family: var(--font-family);
     font-weight: 900;
     font-size: 36px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
@@ -62,6 +123,7 @@ main > section:nth-child(2) h3 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
+    line-height: 1.875;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -70,7 +132,7 @@ main > section:nth-child(2) p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 }
@@ -79,6 +141,7 @@ main > section:nth-child(3) > h2{
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
@@ -92,6 +155,7 @@ main > section:nth-child(4) > h2{
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -100,6 +164,7 @@ main > section:nth-child(4) ul li h3 {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
 }
 
@@ -107,6 +172,7 @@ main > section:nth-child(4) ul li p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
 }
 
@@ -116,8 +182,10 @@ footer {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+    background-color: var(--main-and-footer-heading-color);
+    color: var(--main-text-color);
 }
 
 footer a[href='./index.html']{
