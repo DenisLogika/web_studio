@@ -12,21 +12,38 @@
 }
 
 .header-list,
-.list-item {
+.header-list-item,
+.portfolio-list-item,
+.button-list-item,
+.features,
+.team,
+.occupation {
     list-style-type: none;
+}
+
+.portfolio-button.current {
+    background-color: var(--main-button-color);
+    color: var(--main-text-color);
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover {
+    background-color: var(--main-button-color);
+    color: var(--main-text-color);
 }
 
 .address {
     font-style: normal;
 }
 
-.link {
+.header-link {
     color: inherit;
     text-decoration: none;
 }
 
 .header-list-item,
-.header-link-logo {
+.header-link-logo,
+.header-contacts.link {
     text-decoration: none;
 }
 
@@ -46,16 +63,16 @@
     letter-spacing: 0.03em;
 }
 
-.link:hover, 
-.link:focus {
+.header-link:hover, 
+.header-link:focus {
     color: var(--accent-color-and-current-website);
 }
 
-.link {
+.header-link {
     color: var(--header-link-color);
 }
 
-.link.carrent {
+.header-link.carrent {
     color: var(--accent-color-and-current-website);
 }
 
@@ -69,7 +86,7 @@
     color: var(--main-heading-color);
 }
 
-.portfolio-categories {
+.hidden {
     color: var(--main-heading-color);
     font-family: var(--font-family);
     font-weight: 900;
@@ -79,7 +96,7 @@
     text-align: center;
 }
 
-.portfolio-list.item {
+.portfolio-list-item {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
