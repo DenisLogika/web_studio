@@ -43,15 +43,25 @@
 
 .header-list-item,
 .header-link-logo,
-.header-contacts.link {
+.header-contacts.link,
+.footer-contacts.link,
+.footer-link-logo {
     text-decoration: none;
 }
 
-.header-link-logo {
+.header-link-logo{
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+    color: var(--main-heading-color);
+}
+
+.header-contacts.link{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color: var(--main-heading-color);
 }
 
@@ -61,6 +71,15 @@
     font-size: 32px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.footer-contacts.link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .header-link:hover, 
