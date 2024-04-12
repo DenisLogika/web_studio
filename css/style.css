@@ -7,8 +7,8 @@
     --accent-color-and-current-website: #03A9F4;
     --header-link-color: #7D7D7D;
     --header-color-link: #757575;
-    --font-family: 'roboto', sans-serif;
-    --second-family: 'raleway', sans-serif;
+    --font-family: 'Roboto', sans-serif;
+    --second-family: 'Raleway', sans-serif;
 }
 
 .header-list,
@@ -39,6 +39,15 @@
 .header-link {
     color: inherit;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    color:  var(--main-heading-color);
+}
+
+.header-contacts.link {
+    font-weight: 500;
 }
 
 .header-list-item,
