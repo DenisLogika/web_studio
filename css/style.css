@@ -11,6 +11,19 @@
     --second-family: 'Raleway', sans-serif;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 1px solid tomato; */
+}
+
+.header {
+    background-color: var(--header-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .header-list,
 .header-list-item,
 .portfolio-list-item,
@@ -19,6 +32,11 @@
 .team,
 .occupation {
     list-style-type: none;
+}
+
+.title {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
 }
 
 .portfolio-button.current {
@@ -58,13 +76,19 @@
     text-decoration: none;
 }
 
-.header-link-logo{
-    font-family: var(--second-family);
-    font-weight: 700;
+.header-container {
+    display: flex;
+    align-items: center;
+  }
+
+.header-logo {
+    color: var(--navigation-color);
+    font-family: Raleway;
     font-size: 26px;
-    letter-spacing: 0.03em;
-    color: var(--main-heading-color);
-}
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+  }
 
 .header-contacts.link{
     font-family: var(--font-family);
@@ -141,15 +165,10 @@
     letter-spacing: 0.03em;
 }
 
-.regestration {
-    background-color: var(--main-and-footer-heading-color);
-    color: var(--main-text-color);
-    font-family: var(--font-family);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+.section-title {
+    background-color: var(--main-heading-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -170,6 +189,9 @@
 .regestration-button {
     background-color: var(--main-button-color);
     color: var(--main-text-color);
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0;
 }
 
 .regestration-button {
@@ -191,7 +213,12 @@
     text-align: center;
 }
 
+.features {
+    padding-top: 94px;
+}
+
 .features-name {
+    margin-bottom: 10px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
@@ -209,6 +236,16 @@
     color: #757575;
 }
 
+.sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.heading-occupation {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .heading-occupation {
     font-family: var(--font-family);
     font-weight: 700;
@@ -221,6 +258,11 @@
 
 .team {
     background-color: var(--main-background-section4);
+}
+
+.heading-team {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .heading-team{
@@ -258,6 +300,22 @@
     letter-spacing: 0.03em;
     background-color: var(--main-and-footer-heading-color);
     color: var(--main-text-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.logo-footer-span {
+    color: var(--white-color);
+}
+
+.logo-footer {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--main-button-color);
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .footer-link-logo{

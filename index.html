@@ -7,98 +7,118 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="header-link-logo" href="./index.html">WebStudio</a>
-            <ul class="header-list">
-                <li class="header-list-item"><a class="header-link link carrent" href="index.html">Studio</a></li>
-                <li class="header-list-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
-                <li class="header-list-item"><a class="header-link link" href="#">Contacts</a></li>
-            </ul>
-            <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-contacts link" href="tel:380961111111">+38 096 111 11 11</a>
-        </nav>
+        <div class="container header-container">
+            <nav class="header-nav">
+                <p class="header-logo">Web<span class="header-studio">Studio</span></p>
+                <ul class="header-list">
+                    <li class="header-list-item"><a class="header-link link carrent" href="index.html">Studio</a></li>
+                    <li class="header-list-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header-list-item"><a class="header-link link" href="#">Contacts</a></li>
+                </ul>
+                <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-contacts link" href="tel:380961111111">+38 096 111 11 11</a>
+            </nav>
+        </div>
     </header>
 
     <main class="hero">
-        <section class="regestration">
-            <h1 class="title">Sign up for an appointment with us!</h1>
-            <button class="regestration-button" type="submit">Sing up</button>
+        <section class="section-title">
+            <div class="container">
+                <h1 class="title">Sign up for an appointment with us!</h1>
+                <button class="regestration-button" type="submit">Sing up</button>
+            </div>
         </section>
         <section class="features">
-            <h2 class="heading-features">Features</h2>
-            <ul class="features-list">
-                <li class="features list-item">
-                    <h3 class="features-name">ATTENTION TO DETAIL</h3>
-                    <p class="features-description">Ideological considerations, and even the beginning of the daily work of forming a position.</p>
-                </li>
-                <li class="features list-item">
-                    <h3 class="features-name">PUNCTUALITY</h3>
-                    <p class="features-description">The organization's objectives, especially the scope and location of staff training, entail.</p>
-                </li>
-                <li class="features list-item">
-                    <h3 class="features-name">PLANNING</h3>
-                    <p class="features-description">Likewise, consultation with a broad asset is largely predetermined.</p>
-                </li>
-                <li class="features list-item">
-                    <h3 class="features-name">MODERN TECHNOLOGIES</h3>
-                    <p class="features-description">The significance of these problems is so obvious that the implementation of the planned tasks is possible.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="heading-features">Features</h2>
+                <ul class="features-list">
+                    <li class="features list-item">
+                        <h3 class="features-name">ATTENTION TO DETAIL</h3>
+                        <p class="features-description">Ideological considerations, and even the beginning of the daily work of forming a position.</p>
+                    </li>
+                    <li class="features list-item">
+                        <h3 class="features-name">PUNCTUALITY</h3>
+                        <p class="features-description">The organization's objectives, especially the scope and location of staff training, entail.</p>
+                    </li>
+                    <li class="features list-item">
+                        <h3 class="features-name">PLANNING</h3>
+                        <p class="features-description">Likewise, consultation with a broad asset is largely predetermined.</p>
+                    </li>
+                    <li class="features list-item">
+                        <h3 class="features-name">MODERN TECHNOLOGIES</h3>
+                        <p class="features-description">The significance of these problems is so obvious that the implementation of the planned tasks is possible.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="occupation">
-            <h2 class="heading-occupation">What we do:</h2>
-            <ul class="occupation-list">
-                <li class="occupation list-item">
-                    <img class="image" src="./images/main/working.jpg" alt="Typing on MacBook Air" height="294" width="370" >
-                </li>
-                <li class="occupation list-item">
-                    <img class="image" src="./images/main/working_2.jpg" alt="Desing" height="294" width="370" >
-                </li>
-                <li class="occupation list-item">
-                    <img class="image" src="./images/main/working_2.jpg" alt="Code html" height="294" width="370" >
-                </li>
-            </ul>
+        <section class="occupation sections">
+            <div class="container">
+                <h2 class="heading-occupation">What we do:</h2>
+                <ul class="occupation-list">
+                    <li class="occupation list-item">
+                        <img class="image" src="./images/main/working.jpg" alt="Typing on MacBook Air" height="294" width="370" >
+                    </li>
+                    <li class="occupation list-item">
+                        <img class="image" src="./images/main/working_2.jpg" alt="Desing" height="294" width="370" >
+                    </li>
+                    <li class="occupation list-item">
+                        <img class="image" src="./images/main/working_2.jpg" alt="Code html" height="294" width="370" >
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="team">
-            <h2 class="heading-team">Our team:</h2>
-            <ul class="team-list">
-                <li class="team list-item">
-                    <img class="team-image-person" src="./images/main/person.jpg" alt="Igor Demyanenko" height="260" width="270" >
-                    <h3 class="team-name-person">Igor Demyanenko</h3>
-                    <p class="team-job" style="color: gray;">Product Designer</p>
-                </li>
-                <li class="team list-item">
-                    <img class="team-image-person" src="./images/main/person_2.jpg" alt="Olga Repina" height="260" width="270" >
-                    <h3 class="team-name-person">Olga Repina</h3>
-                    <p class="team-job" style="color: gray;">Frontend Developer</p>
-                </li>
-                <li class="team list-item">
-                    <img class="team-image-person" src="./images/main/person_3.jpg" alt="Mykola Tarasov" height="260" width="270" >
-                    <h3 class="team-name-person">Mykola Tarasov</h3>
-                    <p class="team-job" style="color: gray;">Marketing</p>
-                </li>
-                <li class="team list-item">
-                    <img class="team-image-person" src="./images/main/person_4.jpg" alt="Mikhail Yermakov" height="260" width="270" >
-                    <h3 class="team-name-person">Mikhail Yermakov</h3>
-                    <p class="team-job" style="color: gray;">UI Designer</p>
-                </li>
-            </ul>
+        <section class="team sections">
+            <div class="container">
+                <h2 class="heading-team">Our team:</h2>
+                <ul class="team-list">
+                    <li class="team list-item">
+                        <img class="team-image-person" src="./images/main/person.jpg" alt="Igor Demyanenko" height="260" width="270" >
+                        <h3 class="team-name-person">Igor Demyanenko</h3>
+                        <p class="team-job" style="color: gray;">Product Designer</p>
+                    </li>
+                    <li class="team list-item">
+                        <img class="team-image-person" src="./images/main/person_2.jpg" alt="Olga Repina" height="260" width="270" >
+                        <h3 class="team-name-person">Olga Repina</h3>
+                        <p class="team-job" style="color: gray;">Frontend Developer</p>
+                    </li>
+                    <li class="team list-item">
+                        <img class="team-image-person" src="./images/main/person_3.jpg" alt="Mykola Tarasov" height="260" width="270" >
+                        <h3 class="team-name-person">Mykola Tarasov</h3>
+                        <p class="team-job" style="color: gray;">Marketing</p>
+                    </li>
+                    <li class="team list-item">
+                        <img class="team-image-person" src="./images/main/person_4.jpg" alt="Mikhail Yermakov" height="260" width="270" >
+                        <h3 class="team-name-person">Mikhail Yermakov</h3>
+                        <p class="team-job" style="color: gray;">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <a class="footer-link-logo" href="./index.html">WebStudio</a>
-        <address class="address">
-            <p class="footer-location">Sity Kyiv, 26 Lesi Ukrainky Ave.</p>
-            <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="container">
+            <a class="logo-footer">
+                Web<span class="logo-footer-span">Studio</span>
+            </a>
+            <address class="address">
+                <p class="footer-location">Sity Kyiv, 26 Lesi Ukrainky Ave.</p>
+                <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
