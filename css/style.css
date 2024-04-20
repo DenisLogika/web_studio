@@ -11,6 +11,11 @@
     --second-family: 'Raleway', sans-serif;
 }
 
+body{
+    font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  }  
+
 .container {
     width: 1200px;
     margin: 0 auto;
