@@ -11,95 +11,123 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="header-link-logo" href="./index.html">WebStudio</a>
-            <ul class="header-list">
-                <li class="header-list-item"><a class="header-link link" href="./index.html">Studio</a></li>
-                <li class="header-list-item"><a class="header-link link carrent" href="./portfolio.html">Portfolio</a></li>
-                <li class="header-list-item"><a class="header-link link" href="#">Contacts</a></li>
-            </ul>
-            <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-contacts link" href="tel:380961111111">+38 096 111 11 11</a>
-        </nav>
+        <div class="container header-container flex-header">
+            <nav class="header-nav">
+                <a class="logo-studio-link">
+                    Web<span class="logo-studio">Studio</span>
+                </a>
+                <ul class="header-list">
+                    <li class="header-list-item"><a class="header-link link carrent" href="index.html">Studio</a></li>
+                    <li class="header-list-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header-list-item"><a class="header-link link" href="#">Contacts</a></li>
+                </ul>
+                <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-contacts link" href="tel:380961111111">+38 096 111 11 11</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="portfolio">
-            <h2 class="hidden">Categories</h2>
-            <ul class="button-list">
-                <li class="button-list-item">
-                    <button class="portfolio-button current">All</button>
-                </li>
-                <li class="button-list-item">
-                    <button class="portfolio-button">Web_sites</button>
-                </li>
-                <li class="button-list-item">
-                    <button class="portfolio-button">Apps</button>
-                </li>
-                <li class="button-list-item">
-                    <button class="portfolio-button">Desing</button>
-                </li>
-                <li class="button-list-item">
-                    <button class="portfolio-button">Marketing</button>
-                </li>
-            </ul>
-            <ul class="portfolio-list">
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/web_site.jpg" alt="Technokryak" height="294" width="370" >
-                    <h3 class="portfolio-name">Technokryak</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Web-site</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/desing.jpg" alt="Poster New Orlean vs Golden Star" height="294" width="370" >
-                    <h3 class="portfolio-name">Poster New Orlean vs Golden Star</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Desing</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/app.jpg" alt="Restaurant Seafood" height="294" width="370" >
-                    <h3 class="portfolio-name">Restaurant Seafood</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Apps</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/marketing.jpg" alt="Project Prime" height="294" width="370" >
-                    <h3 class="portfolio-name">Project Prime</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Marketing</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio//app_2.jpg" alt="Project Boxes" height="294" width="370" >
-                    <h3 class="portfolio-name">Project Boxes</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Apps</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/web_site_2.jpg" alt="Inspiration has no Borders" height="294" width="370" >
-                    <h3 class="portfolio-name">Inspiration has no Borders</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Web-site</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/desing_2.jpg" alt="Limited Edition" height="294" width="370" >
-                    <h3 class="portfolio-name">Limited Edition</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Desing</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/marketing_2.jpg" alt="Project LAB" height="294" width="370" >
-                    <h3 class="portfolio-name">Project LAB</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Marketing</p>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-image" src="./images/portfolio/app_3.jpg" alt="Growing Business" height="294" width="370" >
-                    <h3 class="portfolio-name">Growing Business</h3>
-                    <p class="portfolio-categorie" style="color: gray;">Apps</p>
-                </li>
-            </ul>
+            <div class="container flex-div">
+                <h2 class="hidden">Categories</h2>
+                <ul class="button-list">
+                    <li class="button-list-item">
+                        <button class="portfolio-button current">All</button>
+                    </li>
+                    <li class="button-list-item">
+                        <button class="portfolio-button">Web_sites</button>
+                    </li>
+                    <li class="button-list-item">
+                        <button class="portfolio-button">Apps</button>
+                    </li>
+                    <li class="button-list-item">
+                        <button class="portfolio-button">Desing</button>
+                    </li>
+                    <li class="button-list-item">
+                        <button class="portfolio-button">Marketing</button>
+                    </li>
+                </ul>
+                <ul class="portfolio-list">
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/web_site.jpg" alt="Technokryak" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Technokryak</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Web-site</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/desing.jpg" alt="Poster New Orlean vs Golden Star" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Poster New Orlean vs Golden Star</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Desing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/app.jpg" alt="Restaurant Seafood" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Restaurant Seafood</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Apps</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/marketing.jpg" alt="Project Prime" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Project Prime</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio//app_2.jpg" alt="Project Boxes" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Project Boxes</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Apps</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/web_site_2.jpg" alt="Inspiration has no Borders" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Inspiration has no Borders</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Web-site</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/desing_2.jpg" alt="Limited Edition" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Limited Edition</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Desing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/marketing_2.jpg" alt="Project LAB" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Project LAB</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-image" src="./images/portfolio/app_3.jpg" alt="Growing Business" height="294" width="370" >
+                        <div class="text-box">
+                            <h3 class="portfolio-name">Growing Business</h3>
+                            <p class="portfolio-categorie" style="color: gray;">Apps</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     
     <footer class="footer">
-        <a class="footer-link-logo" href="./index.html">WebStudio</a>
-        <address class="footer-address">
-            <p class="footer-location">Sity Kyiv, 26 Lesi Ukrainky Ave.</p>
-            <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="container">
+            <a class="logo-footer">
+                Web<span class="logo-footer span">Studio</span>
+            </a>
+            <address class="address">
+                <p class="footer-location">Sity Kyiv, 26 Lesi Ukrainky Ave.</p>
+                <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
