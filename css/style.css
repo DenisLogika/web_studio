@@ -170,6 +170,12 @@ body{
     margin-right: 8px;
 }
 
+.portfolio-button:active {
+    background-color: var(--buttom-when-mouse-on-button);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    color: var(--work-color);
+}
+
 .portfolio-button,
 .portfolio-button.current {
     padding: 6px 25px;
