@@ -133,6 +133,23 @@ body{
     color: var(--main-heading-color);
 }
 
+.contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.section-title {
+    background-color: var(--main-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/main/background-image-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .portfolio-all {
     font-family: var(--font-family);
     font-weight: 500;
@@ -267,6 +284,10 @@ body{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
+
+.portfolio-list-item:hover {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .section-title {
@@ -475,6 +496,15 @@ body{
     line-height: 1.5;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
+}
+
+.team.list-item {
+    background-color: var(--white-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow:
+        0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .footer {
