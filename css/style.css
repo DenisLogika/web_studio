@@ -172,7 +172,6 @@ body{
 
 .portfolio-button:active {
     background-color: var(--buttom-when-mouse-on-button);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: var(--work-color);
 }
 
@@ -187,6 +186,7 @@ body{
     color: var(--main-heading-color);
     border: none;
     border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-list {
