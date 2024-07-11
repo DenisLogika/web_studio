@@ -317,6 +317,7 @@ body{
 .header-contacts.link:hover, 
 .header-contacts.link:focus {
     color: var(--accent-color-and-current-website);
+    fill: var(--accent-color-and-current-website);
 }
 
 .flex {
@@ -480,6 +481,12 @@ body{
     fill: var(--social-links-workers);
 }
 
+.our-team-link:hover{
+    fill: var(--main-text-color);
+    border-radius: 50%;
+    background-color: var(--main-button-color);
+}
+
 .team-image-person {
     margin-bottom: 30px;
 }
@@ -532,6 +539,50 @@ body{
         0 2px 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 1px 0 rgba(0, 0, 0, 0.14),
         0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.compony {
+    padding: 94px, 0;
+}
+
+.compony-text {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    color: var(--main-heading-color);
+    margin-bottom: 50px;
+}
+
+.company-list {
+    display: flex;
+    gap: 30px;
+    margin-left: 215px;
+    margin-right: 215px;
+    justify-content: center;
+}
+
+.company-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.company-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid var(--social-links-workers);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--social-links-workers);
+}
+
+.company-link:hover {
+    fill: var(--main-button-color);
+    border-color: var(--main-button-color);
 }
 
 .footer {
