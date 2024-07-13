@@ -455,11 +455,6 @@ body{
     width: 360px;
 }
 
-.occupation.sections {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .occupation.list-item {
     width: 370px;
 }
@@ -553,6 +548,11 @@ body{
     margin-bottom: 10px;
 }
 
+.team.sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .team.list-item {
     background-color: var(--white-color);
     border-radius: 0 0 4px 4px;
@@ -604,6 +604,11 @@ body{
 .company-link:hover {
     fill: var(--main-button-color);
     border-color: var(--main-button-color);
+}
+
+.company.sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .footer {
