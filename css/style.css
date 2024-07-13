@@ -548,11 +548,6 @@ body{
     margin-bottom: 10px;
 }
 
-.team.sections {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .team.list-item {
     background-color: var(--white-color);
     border-radius: 0 0 4px 4px;
@@ -560,6 +555,11 @@ body{
         0 2px 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 1px 0 rgba(0, 0, 0, 0.14),
         0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team.sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .compony {
