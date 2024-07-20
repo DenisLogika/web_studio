@@ -707,6 +707,70 @@ body{
     background-color: var(--main-button-color);
 }
 
+.subscribe-newsletter {
+    margin-left: 93px;
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.subscribe-email{
+    width: 358px;
+    margin: 0 12px 0 0;
+    padding: 0 16px;
+    height: 50px;
+    color: var(--main-text-color);
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    outline: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: .06em;
+    color: var(--white-color);
+    background-color: var(--main-button-color);
+}
+
+.subscribe-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-text-color);
+}
+
+.footer-title-newsletter {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: .03em;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: .06em;
+    margin-right: 10px;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -718,4 +782,159 @@ body{
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.backdrop {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 94px 15px 0;
+    opacity: 1;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    padding: 40px;
+    border-radius: 4px;
+    background-color: var(--main-text-color);
+    transform: translate(-50%, -50%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.backdrop.is-hidden.modal {
+    opacity: 0;
+    transform: translate(-50%, 50%) scale(0.5);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn:hover {
+    fill: var(--main-button-color);
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.regestration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-heading-color);
+    flex-direction: column;
+
+}
+
+.regestration-title {
+    margin: 12px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.regestration-div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+}
+
+.regestration-label {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--fill-email-and-phone);
+}
+
+.regestration-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+.regestration-required {
+    height: 40px;
+    margin: 0 0 10px 0;
+    padding: 0 42px;
+}
+
+.regestration-comment {
+    height: 120px;
+    margin: 0 0 20px 0;
+    padding: 12px 16px;
+    font-size: 14px;
+    resize: none;
+}
+
+.regestration-polity-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin: 0 0 30px 0;
+    color: var(--fill-email-and-phone);
+}
+
+.regestration-send {
+    align-self: center;
+    color: var(--main-text-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #188ce8;
+}
+
+.regestration-link {
+    color: var(--main-button-color);
+    text-decoration: underline;
+}
+
+.regestration-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-25%);
+}
+
+.user:hover,
+.tel:hover,
+.email:hover,
+.comment:hover {
+    border-color: var(--main-button-color);
+    fill: var(--main-button-color);
 }

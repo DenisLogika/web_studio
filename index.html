@@ -47,7 +47,7 @@
         <section class="section-title">
             <div class="container flex">
                 <h1 class="title">Sign up for an appointment with us!</h1>
-                <button class="regestration-button" type="submit">Sing up</button>
+                <button class="regestration-button" type="button" data-modal-open>Sing up</button>
             </div>
         </section>
         <section class="features">
@@ -247,7 +247,7 @@
                 </address>
             </div>
             <div class="social-network">
-                <h2 class="footer-title">ПРИЄДНУЙТЕСЬ</h2>
+                <h2 class="footer-title">JOIN US</h2>
                 <ul class="footer-list-svg">
                     <li class="footer-list-item-svg">
                         <a href="./" class="footer-link"> <svg width="20" height="20">
@@ -271,7 +271,77 @@
                     </li>
                 </ul>
             </div>
+            <form class="subscribe-newsletter">
+                <h2 class="footer-title-newsletter">SUBSCRIBE TO THE NEWSLETTER</h2>
+                <div class="subscribe-box">
+                    <input class="subscribe-email" type="email" name="email" placeholder="E-mail">
+                    <button class="btn subscribe-btn" type="submit">
+                        <span class="subscribe-title">
+                            Subscribe</span>
+                        <svg width="24" height="24">
+                            <use href="./images/svg/symboldefs.svg#iconsend"></use> 
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close type="button">
+                <svg class="modal-close-icon" width="18" height="18" aria-label="close">
+                    <use href="./images/svg/symboldefs.svg#cross"></use>
+                </svg>
+            </button>
+            <form class="regestration" name="order-regestration">
+                <h2 class="regestration-title">Leave your details, we will call you back</h2>
+                <div class="regestration-div user">
+                    <label class="regestration-label" for="name">Name</label>
+                    <input class="regestration-input regestration-required user" type="text" name="name" id="name" autofocus="">
+                    <svg class="regestration-icon" width="12" height="12">
+                        <use href="./images/svg/symboldefs.svg#user"></use>
+                    </svg>
+                </div>
+                <div class="regestration-div tel">
+                    <label class="regestration-label" for="tel">Phone</label>
+                    <input class="regestration-input regestration-required tel" type="tel" name="tel" id="tel">
+                    <svg class="regestration-icon" width="12" height="12">
+                        <use href="./images/svg/symboldefs.svg#phoneform"></use>
+                    </svg>
+                </div>
+                <div class="regestration-div email">
+                    <label class="regestration-label" for="mail">Email</label>
+                    <input class="regestration-input regestration-required tel" type="email" name="email" id="mail">
+                    <svg class="regestration-icon" width="12" height="12">
+                        <use href="./images/svg/symboldefs.svg#emailform"></use>
+                    </svg>
+                </div>
+                <div class="regestration-div comment">
+                    <label class="regestration-label" for="comment">Comment</label>
+                    <textarea class="regestration-input regestration-comment tel" placeholder="Input text..." name="comment" id="comment"
+                        rows="8" placeholder="Enter text"></textarea>
+                </div>
+                <div class="regestration-div">
+                    <label class="regestration-polity-label" for="policy">
+                        <input type="checkbox" name="policy" id="policy">
+                        <span class="regestration-icon-check">
+                            <svg width="16" height="15">
+                                <use href="./"></use>
+                            </svg>
+                        </span>
+                        <span>I agree to the newsletter and accept
+                            <a class="regestration-link" href="./">
+                                the terms of the agreement
+                            </a>
+                        </span>
+                    </label>
+                    <button class="btn regestration-send" data-modal-open="" type="submit">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
