@@ -196,6 +196,11 @@ body{
     color: var(--main-text-color);
 }
 
+.carrent,
+.current {
+    position: relative;
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
