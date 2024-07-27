@@ -16,6 +16,7 @@
     --second-family: 'Raleway', sans-serif;
     --fill-email-and-phone: #757575;
     --social-links-workers: #AFB1B8;
+    --bg-portfolio-hover: rgba(33, 150, 243, 0.9);
 }
 
 body{
@@ -260,6 +261,21 @@ body{
 
 .header-link.carrent {
     color: var(--accent-color-and-current-website);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.carrent::after {
+    position: absolute;
+    content: "";
+    margin-top: 28px;
+    left: 0;
+    gap: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-button-color);
+    border-radius: 3px;
+    display: block;
 }
 
 .portfolio-button {
@@ -337,6 +353,7 @@ body{
     padding: 10px 32px;
     min-width: 216px;
     border: 0;
+    cursor: pointer;
 }
 
 .regestration-button {
@@ -749,6 +766,7 @@ body{
     letter-spacing: .06em;
     color: var(--white-color);
     background-color: var(--main-button-color);
+    cursor: pointer;
 }
 
 .subscribe-btn {
@@ -940,7 +958,43 @@ body{
 .user:hover,
 .tel:hover,
 .email:hover,
-.comment:hover {
+.comment:hover,
+.user:focus,
+.tel:focus,
+.email:focus,
+.comment:focus,
+.user:active,
+.tel:active,
+.email:active,
+.comment:active {
     border-color: var(--main-button-color);
     fill: var(--main-button-color);
+}
+
+.portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-portfolio-hover);
+    transform: translatey(100%);
+    transition: 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: .03em;
+    color: var(--main-text-color);
+}
+
+.portfolio-img:hover .portfolio-hover {
+    transform: translatey(0);
+}
+
+.portfolio-img {
+    overflow: hidden;
+    position: relative;
 }
