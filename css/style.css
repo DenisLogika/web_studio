@@ -11,6 +11,7 @@
     --work-color: #F5F4FA;
     --main-header-color: #ECECEC;
     --buttom-when-mouse-on-button: #188CE8;
+    --animation-color-btn: #16568a;
     --background-for-icons: #f5f4fa;
     --font-family: 'Roboto', sans-serif;
     --second-family: 'Raleway', sans-serif;
@@ -73,6 +74,12 @@ body{
 .portfolio-button.current {
     background-color: var(--main-button-color);
     color: var(--main-text-color);
+    animation-name: btn-current;
+    animation-duration: 250ms;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
 }
 
 .portfolio-button:focus,
@@ -199,6 +206,12 @@ body{
 .carrent,
 .current {
     position: relative;
+    animation-name: text-anim;
+    animation-duration: 250ms;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
 }
 
 .portfolio-list {
@@ -1052,4 +1065,32 @@ body{
 .portfolio-img {
     overflow: hidden;
     position: relative;
+}
+
+@keyframes btn-current {
+    0% {
+        background-color: var(--buttom-when-mouse-on-button);
+    }
+
+    50% {
+        background-color: var(--animation-color-btn);
+    }
+
+    100% {
+        background-color: var(--buttom-when-mouse-on-button);
+    }
+}
+
+@keyframes text-anim {
+    0% {
+        color: var(--buttom-when-mouse-on-button);
+    }
+
+    50% {
+        color: var(--animation-color-btn);
+    }
+
+    100% {
+        color: var(--buttom-when-mouse-on-button);
+    }
 }

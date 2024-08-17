@@ -16,9 +16,10 @@
     />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container header-container flex-header">
             <nav class="header-nav">
                 <a class="logo-studio-link">
@@ -44,7 +45,7 @@
     </header>
 
     <main class="hero">
-        <section class="section-title">
+        <section class="section-title" data-aos="fade-down">
             <div class="container flex">
                 <h1 class="title">Sign up for an appointment with us!</h1>
                 <button class="regestration-button" type="button" data-modal-open>Sing up</button>
@@ -343,5 +344,9 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
